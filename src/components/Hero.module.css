@@ -1,0 +1,94 @@
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: var(--spacing-8);
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
+        url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070&auto=format&fit=crop') no-repeat center/cover;
+}
+
+.content {
+    max-width: 800px;
+    z-index: 10;
+    animation: fadeIn 1s ease-out;
+}
+
+.title {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-6);
+    line-height: 1.1;
+    background: linear-gradient(to right, #fff, var(--color-text-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-8);
+    font-weight: var(--font-weight-light);
+}
+
+.ctaGroup {
+    display: flex;
+    gap: var(--spacing-4);
+    justify-content: center;
+}
+
+.primaryButton {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-4) var(--spacing-8);
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+    transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.primaryButton:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+}
+
+.secondaryButton {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: var(--spacing-4) var(--spacing-8);
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.secondaryButton:hover {
+    background-color: white;
+    color: var(--color-background);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .ctaGroup {
+        flex-direction: column;
+    }
+}

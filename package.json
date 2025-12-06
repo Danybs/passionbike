@@ -1,6 +1,5 @@
 {
   "name": "passionbike",
-  "homepage": "https://Danybs.github.io/passionbike/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,8 +16,6 @@
     "dev": "vite",
     "lint": "eslint .",
     "build": "tsc -b && vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "prepare": "husky"
   },

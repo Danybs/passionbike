@@ -22,11 +22,14 @@ export const Header = () => {
 
       {/* Desktop Nav */}
       <nav className={styles.nav}>
-        <a href="#home" className={styles.navLink}>
-          Inicio
+        <a href="#taller" className={styles.navLink}>
+          Taller
         </a>
-        <a href="#services" className={styles.navLink}>
-          Servicios
+        <a href="#montajes" className={styles.navLink}>
+          Montajes
+        </a>
+        <a href="#alquiler" className={styles.navLink}>
+          Alquiler
         </a>
         <a href="#contact" className={styles.navLink}>
           Contacto
@@ -58,11 +61,14 @@ export const Header = () => {
       {/* Mobile Nav Overlay */}
       {isMenuOpen && (
         <nav className={styles.mobileNavOpen}>
-          <a href="#home" className={styles.navLinkMobile} onClick={closeMenu}>
-            Inicio
+          <a href="#taller" className={styles.navLinkMobile} onClick={closeMenu}>
+            Taller
           </a>
-          <a href="#services" className={styles.navLinkMobile} onClick={closeMenu}>
-            Servicios
+          <a href="#montajes" className={styles.navLinkMobile} onClick={closeMenu}>
+            Montajes
+          </a>
+          <a href="#alquiler" className={styles.navLinkMobile} onClick={closeMenu}>
+            Alquiler
           </a>
           <a href="#contact" className={styles.navLinkMobile} onClick={closeMenu}>
             Contacto

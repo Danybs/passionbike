@@ -11,9 +11,6 @@ import certAmpliacionDt3 from '../assets/images/cert-ampliacion-dt3.jpg';
 import certBosch from '../assets/images/cert-bosch.jpg';
 import certDt3_2023 from '../assets/images/cert-dt3-2023.jpg';
 import certDt3 from '../assets/images/cert-dt3.jpg';
-import imgRentalPromo from '../assets/images/rental-promo.jpg';
-import imgEbike1 from '../assets/images/ebike-1.jpg';
-import imgEbike2 from '../assets/images/ebike-2.jpg';
 import styles from './Services.module.css';
 
 export const Services = () => {
@@ -214,57 +211,6 @@ export const Services = () => {
         </div>
       </section>
 
-      {/* ───── 3. ALQUILER BICICLETAS ELÉCTRICAS ───── */}
-      <section id="alquiler" className={styles.section}>
-        <div className={styles.container}>
-          <div className={styles.header}>
-            <h2 className={styles.sectionTitle}>Alquiler de Bicicletas Eléctricas</h2>
-            <p className={styles.subtitle}>
-              Bicicletas eléctricas de montaña de alta gama. Desde <strong>65&nbsp;€/día</strong>.
-              Con posibilidad de rutas guiadas (consultar precio).
-            </p>
-          </div>
-
-          <div className={styles.rentalGrid}>
-            <img
-              src={imgRentalPromo}
-              alt="Alquiler MTB Eléctrica"
-              className={styles.rentalImage}
-              onClick={() => setLightboxSrc(imgRentalPromo)}
-            />
-            <img
-              src={imgEbike1}
-              alt="E-Bike en la montaña"
-              className={styles.rentalImage}
-              onClick={() => setLightboxSrc(imgEbike1)}
-            />
-            <img
-              src={imgEbike2}
-              alt="Ruta en bicicleta"
-              className={styles.rentalImage}
-              onClick={() => setLightboxSrc(imgEbike2)}
-            />
-          </div>
-
-          <div className={styles.rentalInfo}>
-            <p>
-              También disponemos de diferentes tracks dependiendo del nivel y la dificultad. Rutas
-              para todos los públicos, desde iniciación hasta los más expertos.
-            </p>
-          </div>
-
-          <div className={styles.rentalCta}>
-            <a
-              href="https://wa.me/34650799416?text=Hola,%20estoy%20interesado%20en%20el%20alquiler%20de%20E-Bikes"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.rentalButton}
-            >
-              Reservar Bici
-            </a>
-          </div>
-        </div>
-      </section>
       {/* Lightbox */}
       {lightboxSrc && (
         <div className={styles.lightboxOverlay} onClick={() => setLightboxSrc(null)}>

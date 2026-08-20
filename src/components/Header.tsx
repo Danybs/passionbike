@@ -28,9 +28,6 @@ export const Header = () => {
         <a href="#montajes" className={styles.navLink}>
           Montajes
         </a>
-        <a href="#alquiler" className={styles.navLink}>
-          Alquiler
-        </a>
         <a href="#contact" className={styles.navLink}>
           Contacto
         </a>
@@ -66,9 +63,6 @@ export const Header = () => {
           </a>
           <a href="#montajes" className={styles.navLinkMobile} onClick={closeMenu}>
             Montajes
-          </a>
-          <a href="#alquiler" className={styles.navLinkMobile} onClick={closeMenu}>
-            Alquiler
           </a>
           <a href="#contact" className={styles.navLinkMobile} onClick={closeMenu}>
             Contacto

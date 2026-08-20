@@ -1,5 +1,5 @@
 import styles from './Footer.module.css';
-import { MapPin, Phone, Mail, Instagram, Wrench, Puzzle, Bike } from 'lucide-react';
+import { MapPin, Phone, Mail, Instagram, Wrench, Puzzle } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -23,12 +23,6 @@ export const Footer = () => {
               <Puzzle size={18} className={styles.iconInline} />
               <a href="#montajes" className={styles.link}>
                 Montajes a la Carta
-              </a>
-            </li>
-            <li className={styles.contactItem}>
-              <Bike size={18} className={styles.iconInline} />
-              <a href="#alquiler" className={styles.link}>
-                Alquiler de E-Bikes
               </a>
             </li>
           </ul>
